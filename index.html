@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Spectral+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="main-header flex">
+
+			<a href="index.html" class="main-header-logo">
+				<img src="img/main-header-logo.png" width="130" height="82" alt="Логотип сайта">
+			</a>
+	
+			<ul class="main-header-nav flex">
+				<li>
+					<a href="#articles">Статьи</a>
+				</li>
+				<li>
+					<a href="#about">Обо мне</a>
+				</li>
+				<li>
+					<a href="#portfolio">Портфолио</a>
+				</li>
+				<li>
+					<a href="#contacts">Написать мне</a>
+				</li>
+			</ul>
+	</header>
+	
+	<main class="main">
+		<h1 class="hidden">Блог Анны Сладкуновой</h1>
+		<section class="main-articles">
+			<div class="main-articles-header flex">
+				<h2 id="articles">Все статьи</h2>
+					
+				    <select class="select-css">
+						<option value="all" selected>Все статьи</option>
+						<option value="city">Город</option>
+						<option value="books">Книги</option>
+						<option value="travel">Путешествия</option>
+						<option value="cook">Рецепты</option>
+						<option value="photo">Фотографии</option>
+					</select>
+			</div>
+			<div class="main-articles-section flex">
+			
+				<article class="main-articles-small news-block" data-category="travel">
+					<a class="main-articles-small-art1" href="article.html">
+						<img src="img/small-article-logo-01.jpg" width="387" height="268" alt="Путешествие в Берлин">
+							<h3 class="main-articles-small-name">
+								Путешествие в Берлине в августе
+							</h3>
+							<p class="main-articles-small-text">
+								Летний месяц я провела в столице Германии <br>
+								вместе с друзьями. И вот как это было!
+							</p>
+					</a>
+					<div class="main-articles-small-info flex">
+						<p class="main-articles-small-info-tags">
+							Теги: путешествия
+						</p>
+						<p class="main-articles-small-info-date">
+							<time datetime="2020-09-29">29.09.2020</time>
+						</p>
+					</div>
+				</article>
+				
+				<article class="main-articles-small news-block" data-category="city">
+					<a class="main-articles-small-art2" href="article.html">
+						<img src="img/small-article-logo-02.jpg" width="387" height="268" alt="Лучшие кофейни в Москве">
+							<h3 class="main-articles-small-name">
+								Где выпить колдбрю в Москве
+							</h3>
+							<p class="main-articles-small-text">
+								Собрала для вас список любимых кофеен,<br>
+								где подают лучший летний напиток.
+							</p>
+					</a>
+					<div class="main-articles-small-info flex">
+						<p class="main-articles-small-info-tags">
+							Теги: город
+						</p>
+						<p class="main-articles-small-info-date">
+							<time datetime="2020-07-24">24.07.2020</time>
+						</p>
+					</div>
+				</article>
+				
+				<article class="main-articles-small news-block" data-category="books">
+					<a class="main-articles-small-art3" href="article.html">
+						<img src="img/small-article-logo-03.jpg" width="387" height="268" alt="Книжные рекомендации">
+							<h3 class="main-articles-small-name">
+								Прочитано: книжные рекомендации
+							</h3>
+							<p class="main-articles-small-text">
+								Рассказываю о прочитанных за последнее<br>
+								время книгах: фавориты и провалы.
+							</p>
+					</a>
+					<div class="main-articles-small-info flex">
+						<p class="main-articles-small-info-tags">
+							Теги: книги
+						</p>
+						<p class="main-articles-small-info-date">
+							<time datetime="2020-07-15">15.07.2020</time>
+						</p>
+					</div>
+				</article>
+			
+<!--			</div>-->
+<!--			<div class="main-articles-big-section flex" >-->
+				<article class="main-articles-big news-block" data-category="photo">
+					<a class="main-articles-big-art1" href="article.html">
+						<h3 class="main-articles-big-name">
+							Снимки на плёнку
+						</h3>
+						<p class="main-articles-big-text">
+							Поделилась с вами весенними фотографиями, <br>
+							и секретами удачных снимков.
+						</p>
+					</a>
+					<div class="main-articles-info flex">
+						<p class="main-articles-big-info-tags">
+							Теги: фотография
+						</p>
+						<p class="main-articles-big-info-date">
+							<time datetime="2020-06-29">29.06.2020</time>
+						</p>
+					</div>
+				</article>
+				
+				<article class="main-articles-big news-block" data-category="cook">
+					<a class="main-articles-big-art2" href="article.html">
+						<h3 class="main-articles-big-name">
+							Домашний чизкейк
+						</h3>
+						<p class="main-articles-big-text">
+							Что может быть лучше чизкейка с сезонным<br>
+							ягодами? Только домашний чизкейк!
+						</p>
+					</a>
+					<div class="main-articles-info flex">
+						<p class="main-articles-big-info-tags">
+							Теги: рецепты
+						</p>
+						<p class="main-articles-big-info-date">
+							<time datetime="2020-06-24">24.06.2020</time>
+						</p>
+					</div>
+				</article>
+				
+			</div>
+			<div class="main-articles-footer">
+				
+				<Button class="main-articles-footer-button">
+					Показать еще
+				</Button>
+			</div>
+		</section>
+		
+		<section class="main-about">
+		
+			<h2 id="about">Обо мне</h2>
+			<div class="main-about-block flex">
+				<div class="main-about-block-photo">
+					<img src="img/main-about-photo.jpg" width="590" height="693" alt="Это я">
+				</div>
+				<div class="main-about-block-text">
+					<div class="main-about-block-text-about">
+						<p>
+							Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.
+						</p>
+						<p>
+							Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!
+						</p>
+						<p>
+							Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.
+						</p>
+						<p>
+							Приятного чтения!
+						</p>
+					</div>
+					<div class="main-about-block-text-blockquote">
+						<p class="about-blockquote">
+						<br>
+							Я верю, что каждый раз пробуя новое, <br>
+							выходящее за зону моего комфорта,<br>
+							я действительно узнаю настояющую <br>
+							себя.
+						</p>
+					</div>
+				</div>
+			</div>
+		
+		</section>
+		
+		<section class="main-portfolio">
+			
+			<h2 id="portfolio">Портфолио</h2>
+
+			<div class="main-portfolio-galery flex">
+				<div class="main-portfolio-galery-card">
+					<h3 class="main-portfolio-galery-card-text">
+						Блог HTML Academy
+					</h3>
+					<h3 class="main-portfolio-galery-card-text-small">
+						«Как учиться продуктивно»
+					</h3>
+					<p>
+						Про основные методы обучения,<br> 
+						которые помогут быстро и надолго<br> 
+						запомнить информацию.
+					</p>
+				</div>
+				<div class="main-portfolio-galery-card">
+					<h3 class="main-portfolio-galery-card-text">
+						Журнал «LNK»
+					</h3>
+					<h3  class="main-portfolio-galery-card-text-small">
+						«Зачем поцели нужны человеку?<br> 
+						И какие они бывают»
+					</h3>
+					<p>
+						Поцелуи — повсеместная ежедневная<br>
+						практика. Но зачем люди целуются?<br>
+						Какие смысли вкладывают в этот ритуал?<br>
+						И где корни этой практики?
+					</p>
+				</div>
+				<div class="main-portfolio-galery-card">
+					<h3 class="main-portfolio-galery-card-text">
+						Журнал «Т — Л»
+					</h3>
+					<h3 class="main-portfolio-galery-card-text-small">
+						«Советы по эффективной<br>
+						удалённой работе»
+					</h3>
+					<p>
+						Поделилась лайфхаками, которые помогают<br> 
+						мне работать продуктивно из дома. 
+					</p>
+				</div>
+
+			</div>
+			
+			<div class="main-portfolio-footer">
+				<Button class="main-portfolio-footer-button">
+					Показать еще
+				</Button>
+			</div>
+
+		
+		</section>
+		
+		<section class="main-contacts">
+			
+			<h2 id="contacts">
+				Написать мне
+			</h2>
+			<form class="comment-form" action="#" method="post">
+				<div class="contacts-form-container flex">
+					<div class="contacts-form-name">	
+						<label for="username">Ваше имя</label><br>
+						<input id="username" type="text" name="username" placeholder="Иван Иванов" required>
+					</div>
+					<div class="contacts-form-fields">	
+						<label for="email">Email</label><br>
+						<input id="email" type="email" name="email" placeholder="google@gmail.com" required><br>
+					</div>
+				</div>
+				<div class="contacts-form-comment">	
+					<label for="comment">Сообщение</label><br>
+					 <textarea class="comment-field-text" name="comment" id="comment" rows="10" minlength="" maxlength="" placeholder="Напишите здесь ваше сообщение."></textarea><br>
+					 <span class="text-counter"><output class="char-counter" for="comment-textarea"> </output></span>
+				</div>
+				<div class="main-form-footer">
+					<button class="submit-button">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</section>
+		
+	</main>
+	
+	<footer class="main-footer">
+		<ul class="main-footer-contacts flex">
+				<li>
+					<a href="_">ВК</a>
+				</li>
+				<li>
+					<a href="_">Телеграм</a>
+				</li>
+				<li>
+					<a href="_">Инстаграм</a>
+				</li>
+				<li>
+					<a href="_">Твиттер</a>
+				</li>
+			</ul>
+		
+	</footer>
+	
+	<script src="comments.js"></script>
+	<script src="filter.js"></script>
+	
+</body>
+</html>
